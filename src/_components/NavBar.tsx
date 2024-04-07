@@ -7,7 +7,7 @@ import { useEffect } from "react";
 
 export const NavBar = () => {
     const pathname = usePathname();
-    const { title } = useParams();
+    const { title }: {title: string} = useParams();
 
     useEffect(() => {
         console.log();
@@ -16,7 +16,7 @@ export const NavBar = () => {
         } else if (pathname === '/create') {
             document.title = 'Create Recipe'
         } else {
-            document.title = 'Recipe | ' + title;
+            document.title = 'Recipe | ' + title.replace('%20', ' ');
         }
     }, [pathname]);
 
