@@ -38,12 +38,11 @@ const RecipeSlicer =  createSlice({
     name: 'recipes',
     initialState,
     reducers: {
-        // loadRecipes: (_state, action: PayloadAction<Recipe[]>) => action.payload,
-        deleteRecipe: (state, action: PayloadAction<string>) => {
-            state.recipes.filter((recipe) => recipe.title !== action.payload)
+        createNewRecipe: (state, action: PayloadAction<Recipe>) => {
+            state.recipes = [...state.recipes, {...action.payload, dateAdded: new Date().toLocaleDateString()}]
         },
         updateRecipe: (state, action: PayloadAction<Recipe>) => {
-            state.recipes.map((recipe) => {
+            state.recipes = state.recipes.map((recipe) => {
                 if (recipe.title === action.payload.title) {
                     return action.payload
                 } else {
@@ -51,9 +50,9 @@ const RecipeSlicer =  createSlice({
                 }
             })
         },
-        createNewRecipe: (state, action: PayloadAction<Recipe>) => {
-            state.recipes = [...state.recipes, {...action.payload, dateAdded: new Date().toLocaleDateString()}]
-        }
+        deleteRecipe: (state, action: PayloadAction<string>) => {
+            state.recipes = state.recipes.filter((recipe) => recipe.title !== action.payload)
+        },
     },
     extraReducers: (builder) => {
         builder
