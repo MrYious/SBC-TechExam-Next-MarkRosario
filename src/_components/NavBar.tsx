@@ -18,7 +18,7 @@ export const NavBar = () => {
         } else {
             document.title = 'Recipe | ' + title;
         }
-    }, [location]);
+    }, [pathname]);
 
     return (
         <nav>
