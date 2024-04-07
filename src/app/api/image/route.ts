@@ -30,3 +30,19 @@ export async function POST(req: NextRequest) {
         return NextResponse.json({ message: 'Internal server error' }, { status: 500 });
     }
 }
+
+export async function DELETE(req: NextRequest) {
+    try {
+        const { image } = await req.json();
+        const filePath = path.join(process.cwd(), 'public' + image);
+
+        await fs.promises.access(filePath, fs.constants.F_OK);
+        await fs.promises.unlink(filePath);
+        return NextResponse.json({
+            message: 'Image Deleted Successfully',
+        });
+    } catch (error) {
+        console.error('Error processing request:', error);
+        return NextResponse.json({ message: 'Internal server error' }, { status: 500 });
+    }
+}

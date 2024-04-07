@@ -62,6 +62,20 @@ export const RecipePageForm = (props: RecipeFormProps) => {
     }
 
     const handleDelete = () => {
+        fetch('/api/image',{
+            body: JSON.stringify({
+                image: recipeList.find((item) => item.title === recipe.title)?.image,
+            }),
+            method: "DELETE",
+            headers: {
+                "Content-Type": 'application/json'
+            }
+        })
+        .then(res => res.json())
+        .then(res => {
+            console.log('Response', res)
+        })
+        .catch(err => console.log(err))
         dispatch(deleteRecipe(recipe.title));
         returnHomePage()
     }
