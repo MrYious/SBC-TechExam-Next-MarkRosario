@@ -10,7 +10,8 @@ import { useAppSelector } from "@/lib/hooks";
 
 export default function Home() {
 
-  const { recipeList , userPreference } = useAppSelector((state) => state);
+  const recipeList = useAppSelector((state) => state.recipeList);
+  const userPreference = useAppSelector((state) => state.userPreference);
 
   const sortRecipesBySortOrder = (unsortedList: typeof recipeList.recipes, order: typeof userPreference.sort) => {
     if(order.byTitle) {
