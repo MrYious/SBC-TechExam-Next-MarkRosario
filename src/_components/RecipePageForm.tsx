@@ -117,7 +117,7 @@ export const RecipePageForm = (props: RecipeFormProps) => {
             && <Toast toast={toast}/>
         }
         <section id='leftImageContainer'>
-            <button onClick={returnHomePage} id='goBackButton'>
+            <button onClick={returnHomePage} type={'button'} id='goBackButton'>
                 <Image src={iconBackArrow} alt="icon back arrow" className="icon"/>
                 Back
             </button>

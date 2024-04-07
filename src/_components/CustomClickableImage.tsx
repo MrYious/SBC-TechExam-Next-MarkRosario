@@ -1,7 +1,6 @@
 import { ChangeEvent, useRef } from 'react';
 
 import { Recipe } from '@/lib/slicers/RecipeSlicer';
-import imgPlaceholder from '../../public/assets/placeholderImage.svg'
 import { updateSelectedRecipe } from '@/lib/slicers/SelectRecipeSlicer';
 import { useAppDispatch } from '@/lib/hooks';
 
@@ -29,7 +28,9 @@ export const CustomClickableImage = (props: {recipe: Recipe}) => {
         <div
             id='recipeImageContainer'
             onClick={handleClickImage}
-            style={{backgroundImage: `url('${props.recipe.image || imgPlaceholder}')`}}
+            style={{
+                backgroundImage: `url('${props.recipe.image || 'images/placeholder.svg'}')`
+            }}
         >
             <input
                 type="file"
