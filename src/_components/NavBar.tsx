@@ -1,17 +1,19 @@
-import { useLocation, useParams } from "react-router-dom"
+'use client'
+
+import { useParams, usePathname } from "next/navigation";
 
 import { SearchBox } from "./SearchBox"
 import { useEffect } from "react";
 
 export const NavBar = () => {
-    const location = useLocation();
+    const pathname = usePathname();
     const { title } = useParams();
 
     useEffect(() => {
         console.log();
-        if (location.pathname === '/') {
+        if (pathname === '/') {
             document.title = 'Home | Recipes';
-        } else if (location.pathname === '/create') {
+        } else if (pathname === '/create') {
             document.title = 'Create Recipe'
         } else {
             document.title = 'Recipe | ' + title;
