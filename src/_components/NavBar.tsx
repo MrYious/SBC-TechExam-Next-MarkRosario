@@ -23,7 +23,7 @@ export const NavBar = () => {
     return (
         <nav>
             {
-                location.pathname === "/"
+                pathname === "/"
                 && <SearchBox />
             }
         </nav>
