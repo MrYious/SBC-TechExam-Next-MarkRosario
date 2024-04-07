@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Juan Dela Cruz",
+        "email": "juan@example.com",
+        "title": "Chicken Adobo",
+        "description": "A classic Filipino dish featuring tender chicken marinated in vinegar, soy sauce, and spices, then simmered until flavorful and tender.",
+        "ingredients": "1 kg chicken pieces, 1/2 cup soy sauce, 1/2 cup vinegar, 4 cloves garlic (minced), 1 onion (sliced), 1 bay leaf, 1 teaspoon peppercorns, 1 tablespoon cooking oil",
+        "instructions": "1. In a bowl, combine chicken, soy sauce, vinegar, garlic, onion, bay leaf, and peppercorns. Marinate for at least 30 minutes.\n2. Heat oil in a pan over medium heat. Add marinated chicken and cook until browned.\n3. Pour in the marinade and bring to a boil. Reduce heat, cover, and simmer until chicken is tender.\n4. Serve hot with steamed rice. Enjoy!",
+        "image": "/images/Chicken Adobo.jpg",
+        "dateAdded": "Mar 15 2024"
+    },
+    {
+        "name": "Maria Cruz",
+        "email": "maria@example.com",
+        "title": "Pork Sinigang",
+        "description": "A sour and savory Filipino soup made with tender pork, vegetables, and tamarind broth, perfect for a comforting meal.",
+        "ingredients": "500g pork belly (sliced), 1 onion (quartered), 2 tomatoes (quartered), 1 radish (sliced), 1 eggplant (sliced), 1 bundle kangkong (water spinach), 2 tablespoons tamarind mix, 1 liter water, salt to taste",
+        "instructions": "1. In a pot, bring water to a boil. Add pork belly and simmer until tender.\n2. Add onions and tomatoes. Simmer until vegetables are soft.\n3. Stir in tamarind mix and season with salt to taste.\n4. Add radish, eggplant, and kangkong. Cook until vegetables are tender.\n5. Serve hot with steamed rice. Enjoy!",
+        "image": "/images/Pork Sinigang.jpg",
+        "dateAdded": "Feb 22 2024"
+    },
+    {
+        "name": "Josefina Santos",
+        "email": "josefina@example.com",
+        "title": "Pancit Canton",
+        "description": "A flavorful stir-fried noodle dish loaded with vegetables, meat, and savory flavors, a staple in Filipino gatherings.",
+        "ingredients": "250g pancit canton noodles, 200g chicken breast (sliced), 100g shrimp (peeled and deveined), 1 carrot (julienned), 1 bell pepper (sliced), 1 onion (sliced), 3 cloves garlic (minced), 2 tablespoons soy sauce, 2 tablespoons oyster sauce, 1/2 cup chicken broth, cooking oil",
+        "instructions": "1. Cook pancit canton noodles according to package instructions. Drain and set aside.\n2. In a wok or large pan, heat oil over medium-high heat. Add garlic and onion, sauté until fragrant.\n3. Add chicken and shrimp, cook until lightly browned.\n4. Stir in carrots and bell peppers, cook until vegetables are tender-crisp.\n5. Add cooked noodles, soy sauce, oyster sauce, and chicken broth. Toss until well combined and heated through.\n6. Serve hot and garnish with chopped green onions. Enjoy!",
+        "image": "/images/Pancit Canton.jpg",
+        "dateAdded": "Jan 10 2024"
+    },
+    {
+        "name": "Ramon Santos",
+        "email": "ramon@example.com",
+        "title": "Lechon Kawali",
+        "description": "Crispy fried pork belly with tender meat inside, a beloved Filipino dish often served with a side of vinegar dipping sauce.",
+        "ingredients": "1 kg pork belly, 4 cups water, 2 bay leaves, 4 cloves garlic (crushed), 1 tablespoon salt, 1 teaspoon peppercorns, cooking oil for deep-frying",
+        "instructions": "1. In a pot, combine pork belly, water, bay leaves, garlic, salt, and peppercorns. Bring to a boil, then simmer until pork is tender.\n2. Remove pork from the pot and let it cool. Pat dry with paper towels.\n3. Heat oil in a deep fryer or large pot to 350°F (175°C).\n4. Carefully add the pork belly and deep-fry until golden and crispy.\n5. Remove from oil and drain on paper towels.\n6. Slice and serve hot with vinegar dipping sauce and steamed rice. Enjoy!",
+        "image": "/images/Lechon Kawali.jpg",
+        "dateAdded": "Apr 02 2024"
+    },
+    {
+        "name": "Lea Reyes",
+        "email": "lea@example.com",
+        "title": "Tinolang Manok",
+        "description": "A comforting Filipino soup made with chicken, ginger, and vegetables, simmered in a flavorful broth.",
+        "ingredients": "1 kg chicken pieces, 1 thumb-sized ginger (sliced), 2 cloves garlic (minced), 1 onion (sliced), 2 pieces green papaya (sliced), 1 bundle spinach, 1 liter water, fish sauce to taste",
+        "instructions": "1. In a pot, heat oil over medium heat. Sauté garlic, ginger, and onion until fragrant.\n2. Add chicken pieces and cook until lightly browned.\n3. Pour in water and bring to a boil. Simmer until chicken is tender.\n4. Add green papaya and cook until tender.\n5. Season with fish sauce to taste.\n6. Add spinach and cook until wilted.\n7. Serve hot with steamed rice. Enjoy!",
+        "image": "/images/Tinolang Manok.jpg",
+        "dateAdded": "Mar 18 2024"
+    },
+    {
+        "name": "Pedro Santos",
+        "email": "pedro@example.com",
+        "title": "Bicol Express",
+        "description": "A spicy Filipino dish made with pork, shrimp paste, coconut milk, and chili peppers, known for its rich and creamy sauce.",
+        "ingredients": "500g pork belly (sliced), 4 cloves garlic (minced), 1 onion (sliced), 3 tablespoons shrimp paste (bagoong), 2 cups coconut milk, 5-6 pieces red chili peppers (siling labuyo), 2 tablespoons cooking oil",
+        "instructions": "1. In a pan, heat oil over medium heat. Sauté garlic and onion until softened.\n2. Add pork belly and cook until lightly browned.\n3. Stir in shrimp paste and cook for a few minutes.\n4. Pour in coconut milk and add red chili peppers. Simmer until pork is tender and sauce thickens.\n5. Adjust seasoning according to taste.\n6. Serve hot with steamed rice. Enjoy the spicy goodness!",
+        "image": "/images/Bicol Express.jpg",
+        "dateAdded": "Feb 07 2024"
+    }
+]
