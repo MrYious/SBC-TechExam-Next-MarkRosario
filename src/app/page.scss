@@ -1,3 +1,10 @@
+main#loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
 main#home {
     height: 100%;
     display: grid;

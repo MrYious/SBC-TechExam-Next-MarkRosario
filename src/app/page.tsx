@@ -10,10 +10,9 @@ import { useAppSelector } from "@/lib/hooks";
 
 export default function Home() {
 
-  const recipes = useAppSelector((state) => state.recipes);
-  const userPreference = useAppSelector((state) => state.userPreference);
+  const { recipeList , userPreference } = useAppSelector((state) => state);
 
-  const sortRecipesBySortOrder = (unsortedList: typeof recipes, order: typeof userPreference.sort) => {
+  const sortRecipesBySortOrder = (unsortedList: typeof recipeList.recipes, order: typeof userPreference.sort) => {
     if(order.byTitle) {
       const sortedList = [...unsortedList].sort((a, b) => {
         if (order.byTitle === 'ASC') {
@@ -29,7 +28,7 @@ export default function Home() {
   }
 
   const filteredRecipeList = () => {
-    return sortRecipesBySortOrder(recipes, userPreference.sort)
+    return sortRecipesBySortOrder(recipeList.recipes, userPreference.sort)
     .filter((recipe) => {
       if (userPreference.favorites.show) {
         return userPreference.favorites.list.find(title => title.toLowerCase() === recipe.title.toLowerCase())
@@ -44,11 +43,19 @@ export default function Home() {
     })
   }
 
+  if (recipeList.loading) {
+    return (
+      <main id='loading'>
+        <h2>Loading....</h2>
+      </main>
+    )
+  }
+
   return (
     <main id='home'>
-      {recipes.length !== 0 ? <SideBar /> : <aside></aside>}
+      {recipeList.recipes.length !== 0 ? <SideBar /> : <aside></aside>}
       <section>
-        <div id='recipeList' className={`${(recipes.length === 0 || filteredRecipeList().length === 0) && 'empty'}`}>
+        <div id='recipeList' className={`${(recipeList.recipes.length === 0 || filteredRecipeList().length === 0) && 'empty'}`}>
           <NewRecipeButton />
           {
             filteredRecipeList().length === 0 ?

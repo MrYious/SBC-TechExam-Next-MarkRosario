@@ -7,7 +7,7 @@ import { configureStore } from "@reduxjs/toolkit";
 export const makeStore = () => {
     return configureStore({
         reducer: {
-            recipes: RecipeSlicer,
+            recipeList: RecipeSlicer,
             userPreference: UserPreferenceSlicer,
             selectRecipe: SelectRecipeSlicer,
             toast: ToastSlicer
