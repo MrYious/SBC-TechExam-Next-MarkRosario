@@ -14,8 +14,8 @@ export async function POST(req: NextRequest) {
         const { image, title } = await req.json();
         const fileType = getFileTypeFromBase64(image);
 
-        // process.cwd(), 
-        const filePath = path.join('public/images/');
+        // process.cwd(),
+        const filePath = path.join('/images/');
 
         const optionalObj = {'fileName': title, 'type': fileType};
 
