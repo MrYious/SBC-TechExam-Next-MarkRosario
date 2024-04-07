@@ -11,7 +11,6 @@ interface FormTextAreaProps {
     placeholder: string
     value: string
     readonly: boolean
-    rows: number
     state: State
     objKey: string
 }
@@ -51,7 +50,6 @@ export const CustomFormTextArea = (props: FormTextAreaProps) => {
                     placeholder={props.placeholder}
                     name={props.label}
                     readOnly={props.readonly}
-                    rows={props.rows}
                     value={props.value}
                     onChange={handleUpdateValue}
                     onBlur={handleValidateInput}

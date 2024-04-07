@@ -267,4 +267,83 @@ main#home {
             }
         }
     }
+
+    @media only screen and (min-width: 1367px) {
+        grid-template-columns: 1.2fr 3fr;
+
+        aside#sidebar {
+            padding: calc(2rem + 2vh) calc(2px + 2vh) calc(2rem + 2vh) calc(2.5rem + 2vh);
+        }
+
+        h3 {
+            font-size: calc(1rem + 0.5vh);
+        }
+
+        .dropdownGroup, button {
+            font-size: calc(1rem + 0.5vh);
+        }
+
+        #filterGroup {
+            font-size: calc(1rem + 0.3vh);
+        }
+
+        section {
+            padding: calc(2rem + 1.5vh);
+
+            div#recipeList {
+                padding: calc(2rem + 1vh);
+
+                button.newRecipeButton {
+                    width: calc(50px + 1vw);
+                    height: calc(50px + 1vw);
+                }
+
+                .recipeItem {
+                    grid-template-columns: 1.3fr 2fr;
+
+                    div.recipeDetails {
+                        padding: calc(0.9rem + 1vh)
+                    }
+
+                    div.imageHolder, div.recipeDetails {
+                        height: calc(10rem + 5vh);
+
+                        div, p {
+                            font-size: calc(1rem + 0.5vh);
+                        }
+
+                        h1 {
+                            font-size: calc(1rem + 0.7vh);
+                        }
+
+                        p.recipeDesc {
+                            font-size: calc(0.65rem + 0.4vh);
+                        }
+
+                        p.seeMore {
+                            font-size: calc(0.55rem + 0.4vh);
+                        }
+
+                        div.footer {
+
+                            p#name {
+                                flex: 3.5;
+                                font-size: calc(0.70rem + 0.2vh);
+                            }
+                            p#dateAdded {
+                                flex: 1.9;
+                                font-size: calc(0.70rem + 0.2vh);
+                            }
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+        
+
+        
+    }
 }

@@ -56,7 +56,21 @@ body {
                 width: 25px;
                 height: 25px;
             }
+        }
+    }
 
+    @media only screen and (min-width: 1367px) {
+        nav {
+            height: calc(4rem + 4vh);
+            min-height:  calc(4rem + 4vh);
+            max-height:  calc(4rem + 4vh);
+
+            .searchBox {
+
+                input[type="text"] {
+                    font-size: calc(1rem + 1vh);
+                }
+            }
         }
     }
 }

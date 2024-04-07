@@ -172,7 +172,6 @@ export const RecipePageForm = (props: RecipeFormProps) => {
                 placeholder='Description here'
                 label='DESCRIPTION'
                 readonly={false}
-                rows={3}
             />
             <CustomFormTextArea
                 objKey={'ingredients'}
@@ -181,7 +180,6 @@ export const RecipePageForm = (props: RecipeFormProps) => {
                 placeholder='Description here'
                 label='INGREDIENTS'
                 readonly={false}
-                rows={4}
             />
             <CustomFormTextArea
                 objKey={'instructions'}
@@ -190,7 +188,6 @@ export const RecipePageForm = (props: RecipeFormProps) => {
                 placeholder='Description here'
                 label='INSTRUCTIONS'
                 readonly={false}
-                rows={4}
             />
             <div className='buttonGroup'>
                 {

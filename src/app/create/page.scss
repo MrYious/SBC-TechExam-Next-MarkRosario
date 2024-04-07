@@ -26,7 +26,7 @@ main {
         box-sizing: border-box;
         overflow: hidden;
         height: 100%;
-        padding: 1.2rem;
+        padding: 2rem;
         position: relative;
 
         button.toast {
@@ -80,6 +80,7 @@ main {
                 outline: none;
                 border: none;
                 cursor: pointer;
+                justify-content: center;
 
                 &#goBackButton {
                     background-color: rgba(255, 255, 255, 0);
@@ -114,7 +115,9 @@ main {
             padding: 0 4rem;
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
             gap: 0.5rem;
+            height: 100%;
 
             .formInput {
                 display: flex;
@@ -153,6 +156,15 @@ main {
                         resize: none;
                     }
 
+                    input {
+                        max-height: 1rem;
+                    }
+
+                    textarea {
+                        min-height: 3.2rem;
+                        max-height: 3.2rem;
+                    }
+
                     img {
                         padding: 7px;
                     }
@@ -188,5 +200,56 @@ main {
                 }
             }
         }
+
+        @media only screen and (min-width: 1367px) {
+            grid-template-columns: 1.5fr 2.5fr;
+            padding: calc(1.2rem + 2vh);
+
+            section#leftImageContainer {
+                button#goBackButton {
+                    font-size: calc(1.2rem + 1vh);
+                    img.icon {
+                        width: calc(1.5rem + 1vh);
+                        height: calc(1.5rem + 1vh);
+                    }
+                }
+                #recipeImageContainer {
+                    height: calc(20rem + 9vh);
+                }
+            }
+
+            section#rightInputContainer {
+                padding:  0 calc(4rem);
+
+                .formInput {
+
+                    label {
+                        font-size: calc(1rem + 1vh);
+                    }
+
+                    div.customInput {
+                        gap: calc(0.5rem + 1vh);
+
+                        input, textarea {
+                            font-size: calc(1rem + 0.3vh);
+                            padding: calc(7px + 0.5vh);
+                        }
+
+                    }
+                }
+
+                .buttonGroup {
+                    gap: calc(1rem + 1vh);
+
+                    button.formButton {
+                        padding: calc(6px + 0.5vh) 0px;
+                        width: calc(6.5rem + 4vh);
+                        font-size: calc(1.05rem + 0.4vh);
+                    }
+                }
+
+            }
+        }
     }
+
 }
