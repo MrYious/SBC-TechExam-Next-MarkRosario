@@ -205,6 +205,11 @@ main {
             grid-template-columns: 1.5fr 2.5fr;
             padding: calc(1.2rem + 2vh);
 
+            button.toast {
+                font-size: calc(1rem + 0.7vh);
+                padding: calc(0.75rem + 0.5vh) calc(1.5rem + 0.5vh);
+            }
+
             section#leftImageContainer {
                 button#goBackButton {
                     font-size: calc(1.2rem + 1vh);
