@@ -37,7 +37,26 @@ export default function Recipe({params}: URLParams) {
   }, [recipeList])
 
   const handleSave = (recipe: RecipeInterface) => {
-		dispatch(updateRecipe(recipe));
+    if (recipe.image.startsWith(('/images/'))) {
+      dispatch(updateRecipe(recipe));
+    } else {
+      fetch('/api/image',{
+        body: JSON.stringify({
+          image: recipe.image,
+          title: recipe.title
+        }),
+        method: "POST",
+        headers: {
+          "Content-Type": 'application/json'
+        }
+      })
+      .then(res => res.json())
+      .then(res => {
+        console.log('Response', res)
+        dispatch(updateRecipe({...recipe, image: res.filePath}));
+      })
+      .catch(err => console.log(err))
+    }
 	}
 
   if (loading) {
