@@ -36,6 +36,7 @@ main#home {
                     display: flex;
                     padding: 0.3rem 0.6rem;
                     cursor: pointer;
+                    align-items: center;
 
                     .value {
                         flex: 1;
@@ -43,6 +44,11 @@ main#home {
                         &.placeholder {
                             color: #a6a6a6;
                         }
+                    }
+
+                    img {
+                        width: 1rem;
+                        height: 1rem;
                     }
 
                     &.open {
@@ -151,6 +157,9 @@ main#home {
                 right: 1rem;
                 top: 1rem;
                 z-index: 2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
                 img {
                     width: 100%;

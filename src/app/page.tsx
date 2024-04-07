@@ -1,6 +1,6 @@
 'use client'
 
-import "./page.module.scss";
+import "./page.scss";
 
 import { NewRecipeButton } from "@/_components/NewRecipeButton";
 import React from "react";
@@ -46,7 +46,6 @@ export default function Home() {
 
   return (
     <main id='home'>
-      Home
       {recipes.length !== 0 ? <SideBar /> : <aside></aside>}
       <section>
         <div id='recipeList' className={`${(recipes.length === 0 || filteredRecipeList().length === 0) && 'empty'}`}>
