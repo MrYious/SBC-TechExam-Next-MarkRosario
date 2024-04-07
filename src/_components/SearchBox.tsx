@@ -1,7 +1,10 @@
-import { useAppDispatch, useAppSelector } from '../hooks/useReduxHooks'
+'use client'
 
-import iconSearch from '../assets/search.svg'
-import { updateSearchString } from '../slicers/UserPreferenceSlicer';
+import { useAppDispatch, useAppSelector } from '@/lib/hooks';
+
+import Image from 'next/image';
+import iconSearch from '../../public/assets/search.svg'
+import { updateSearchString } from '@/lib/slicers/UserPreferenceSlicer';
 
 export const SearchBox = () => {
 
@@ -20,7 +23,7 @@ export const SearchBox = () => {
                 value={searchString}
                 onChange={handleUpdateSearchString}
             />
-            <img src={iconSearch} alt="search icon" />
+            <Image src={iconSearch} alt='search icon' />
         </div>
     )
 }
