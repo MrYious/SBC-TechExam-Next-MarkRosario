@@ -13,8 +13,8 @@ export const CustomClickableImage = (props: {recipe: Recipe}) => {
         if (selectedFile) {
             const reader = new FileReader();
             reader.onload = () => {
-                const imageDataURL = reader.result as string;
-                dispatch(updateSelectedRecipe({...props.recipe, image: imageDataURL}))
+                const base64Image = reader.result as string;
+                dispatch(updateSelectedRecipe({...props.recipe, image: base64Image}))
             };
             reader.readAsDataURL(selectedFile);
         }
@@ -34,7 +34,7 @@ export const CustomClickableImage = (props: {recipe: Recipe}) => {
         >
             <input
                 type="file"
-                accept="image/*"
+                accept="image/png, image/jpeg, image/jpg"
                 onChange={handleImageChange}
                 ref={fileInputRef}
             />
