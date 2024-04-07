@@ -11,7 +11,6 @@ export interface RecipeValidation {
     description: State,
     ingredients: State,
     instructions: State,
-    image: State,
 }
 
 interface SelectRecipe {
@@ -37,7 +36,6 @@ const initialState: SelectRecipe = {
         description: 'Initial',
         ingredients: 'Initial',
         instructions: 'Initial',
-        image: 'Initial',
     },
 }
 
