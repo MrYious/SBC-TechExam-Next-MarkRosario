@@ -1,3 +1,5 @@
+'use client'
+
 import "./page.module.scss";
 
 import { NewRecipeButton } from "@/_components/NewRecipeButton";
@@ -45,7 +47,7 @@ export default function Home() {
   return (
     <main id='home'>
       Home
-      {/* {recipes.length !== 0 ? <SideBar /> : <aside></aside>}
+      {recipes.length !== 0 ? <SideBar /> : <aside></aside>}
       <section>
         <div id='recipeList' className={`${(recipes.length === 0 || filteredRecipeList().length === 0) && 'empty'}`}>
           <NewRecipeButton />
@@ -60,7 +62,7 @@ export default function Home() {
               </React.Fragment>)
           }
         </div>
-      </section> */}
+      </section>
     </main>
   )
 }
