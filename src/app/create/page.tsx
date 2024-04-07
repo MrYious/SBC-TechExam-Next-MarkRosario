@@ -3,10 +3,10 @@
 import './page.scss'
 
 import { Recipe, createNewRecipe } from '@/lib/slicers/RecipeSlicer';
-import { startNewRecipe, updateSelectedRecipe } from '@/lib/slicers/SelectRecipeSlicer';
 import { useEffect, useState } from 'react';
 
 import { RecipePageForm } from '@/_components/RecipePageForm';
+import { startNewRecipe } from '@/lib/slicers/SelectRecipeSlicer';
 import { useAppDispatch } from '@/lib/hooks';
 
 export default function NewRecipe() {

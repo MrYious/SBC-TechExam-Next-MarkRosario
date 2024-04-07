@@ -22,8 +22,8 @@ export const RecipePageForm = (props: RecipeFormProps) => {
     const router = useRouter();
     const dispatch = useAppDispatch();
     const toast = useAppSelector(state => state.toast);
-    const recipeList = useAppSelector(state => state.recipes);
-    const { recipe, validation } = useAppSelector(state => state.selectRecipe)
+    const recipeList = useAppSelector(state => state.recipeList.recipes);
+    const { recipe, validation } = useAppSelector(state => state.selectRecipe);
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();

@@ -19,7 +19,7 @@ export default function Recipe({params}: URLParams) {
 
   const router = useRouter();
   const dispatch = useAppDispatch();
-  const recipeList = useAppSelector(state => state.recipes);
+  const recipeList = useAppSelector(state => state.recipeList.recipes);
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(false)
 
