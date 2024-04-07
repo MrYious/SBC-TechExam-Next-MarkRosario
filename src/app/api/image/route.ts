@@ -14,7 +14,8 @@ export async function POST(req: NextRequest) {
         const { image, title } = await req.json();
         const fileType = getFileTypeFromBase64(image);
 
-        const filePath = path.join(process.cwd(), 'public/images/');
+        // process.cwd(), 
+        const filePath = path.join('public/images/');
 
         const optionalObj = {'fileName': title, 'type': fileType};
 
@@ -34,7 +35,7 @@ export async function POST(req: NextRequest) {
 export async function DELETE(req: NextRequest) {
     try {
         const { image } = await req.json();
-        const filePath = path.join(process.cwd(), 'public' + image);
+        const filePath = path.join('public' + image);
 
         await fs.promises.access(filePath, fs.constants.F_OK);
         await fs.promises.unlink(filePath);
